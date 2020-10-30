@@ -19,6 +19,11 @@ class CompanyRegister:
 
         return record
 
+    def add_and_create_company_from_its_properties(self, name, address):
+        return self.add_company(
+            Company(name, address)
+        )
+
     def get_company(self, company_id):
         result = None
 
